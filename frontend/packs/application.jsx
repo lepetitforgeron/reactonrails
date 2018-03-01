@@ -6,10 +6,12 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 
-// import './application.css';
+import './application.css';
+
+const MOUNT_NODE = document.getElementById('page');
 
 const Hello = props => (
-  <div>Hello {props.name}!</div>
+  <div className='Hello'>Hello {props.name}!</div>
 )
 
 Hello.defaultProps = {
@@ -23,6 +25,6 @@ Hello.propTypes = {
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <Hello name="React" />,
-    document.body.appendChild(document.createElement('div')),
+    MOUNT_NODE
   )
 })
