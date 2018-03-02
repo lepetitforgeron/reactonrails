@@ -7,7 +7,9 @@
 #
 #  movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #  Character.create(name: 'Luke', movie: movies.first)
-tasks = Task.create(
-  [{ name: 'Eat' }, { name: 'Sleep' }, { name: 'Code' }, { name: 'Repeat' }]
+
+Item.create(
+  name: 'Demo Item',
+  count: 42,
+  description: 'Some Demo Item, with a little description.'
 )
-Checklist.create(name: 'Checklist', tasks: tasks)
