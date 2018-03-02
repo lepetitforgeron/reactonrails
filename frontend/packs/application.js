@@ -1,6 +1,7 @@
+import WebpackerReact from 'webpacker-react';
+
 import './application.css';
 
-import WebpackerReact from 'webpacker-react';
-import Hello from '../components/hello/hello';
+import Hello from '../components/hello/hello.jsx';
 
-WebpackerReact.setup({Hello});
+WebpackerReact.setup({ Hello });
